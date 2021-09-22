@@ -243,7 +243,7 @@
 export default {
   methods: {
     notifi() {
-     // $('#element').toast('show')
+      $('#element').toast('show')
     },
     alert() {
      // toastr.info('Hi! I am info message.');
