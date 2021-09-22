@@ -1,11 +1,6 @@
 <template>
   <div class="home">
     <div class="container-fluid mt-3 mb-3">
-      <a
-        class="btn btn-success"
-        onclick="toastr.success('Hi! I am success message.');"
-        >Success message</a
-      >
 
       <div class="container-sm my-5">
         <div class="card border border-dark rounded-sm bg-white">
@@ -239,20 +234,3 @@
 
 //Link do site onde esta o elemento
 //https://mdbootstrap.com/docs/b4/jquery/javascript/notifications/#introduction
-<script>
-export default {
-  methods: {
-    notifi() {
-      $('#element').toast('show')
-    },
-    alert() {
-     // toastr.info('Hi! I am info message.');
-    }
-  },
-  mounted() {
-    this.notifi()
-  }
-}
-</script>
-
-
