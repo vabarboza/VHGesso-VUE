@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Empresa from "../views/Empresa.vue";
+import ForroLiso from "../views/Produtos/ForroLiso.vue";
+import Colunas from "../views/Produtos/Colunas.vue";
+import Molduras from "../views/Produtos/Molduras.vue";
+import GessoAcartonado from "../views/Produtos/GessoAcartonado.vue";
+import Sancas from "../views/Produtos/Sancas.vue";
 
 const routes = [
   {
@@ -8,23 +14,34 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-  {
     path: "/empresa",
     name: "Empresa",
-    component: () => import("../views/Empresa.vue"),
+    component: Empresa,
   },
   {
     path: "/produtos/forrosliso",
     name: "Forro Liso",
-    component: () => import("../views/Produtos/ForroLiso.vue"),
+    component: ForroLiso,
+  },
+  {
+    path: "/produtos/colunas",
+    name: "Colunas",
+    component: Colunas,
+  },
+  {
+    path: "/produtos/molduras",
+    name: "Molduras",
+    component: Molduras,
+  },
+  {
+    path: "/produtos/gesso-acartonado",
+    name: "Gesso Acartonado",
+    component: GessoAcartonado,
+  },
+  {
+    path: "/produtos/sancas",
+    name: "Sancas",
+    component: Sancas,
   },
 ];
 

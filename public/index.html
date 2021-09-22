@@ -69,13 +69,13 @@
             <div class="dropdown-menu dropdown-ins" aria-labelledby="navbarDropdownMenuLink-555">
               <a class="dropdown-item font-weight-normal" href="/produtos/forrosliso">Forro
                 Liso</a>
-              <a class="dropdown-item font-weight-normal" href="{{ route('molduras">Molduras</a>
-              <a class="dropdown-item font-weight-normal" href="{{ route('gesso-acartonado">Gesso
+              <a class="dropdown-item font-weight-normal" href="/produtos/molduras">Molduras</a>
+              <a class="dropdown-item font-weight-normal" href="/produtos/gesso-acartonado">Gesso
                 Acartonado</a>
-              <a class="dropdown-item font-weight-normal" href="{{ route('sancas">Sancas</a>
-              <a class="dropdown-item font-weight-normal" href="{{ route('colunas">Colunas
+              <a class="dropdown-item font-weight-normal" href="/produtos/sancas">Sancas</a>
+              <a class="dropdown-item font-weight-normal" href="/produtos/colunas">Colunas
                 Decorativas</a>
-              <a class="dropdown-item font-weight-normal" href="{{ route('gesso-decorado">Gesso
+              <a class="dropdown-item font-weight-normal" href="#">Gesso
                 Decorado</a>
             </div>
           </li>
@@ -287,6 +287,12 @@
   <script type="text/javascript" src="<%= BASE_URL %>js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<%= BASE_URL %>js/mdb.min.js"></script>
+  <script>
+    // MDB Lightbox Init
+    $(function () {
+      $("#mdb-lightbox-ui").load("<%= BASE_URL %>mdb-addons/mdb-lightbox-ui.html");
+    });
+  </script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
   <script>
