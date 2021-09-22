@@ -1,8 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import JQuery from "jquery";
-window.$ = JQuery
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
