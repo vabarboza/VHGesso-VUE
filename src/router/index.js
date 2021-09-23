@@ -6,6 +6,8 @@ import Colunas from "../views/Produtos/Colunas.vue";
 import Molduras from "../views/Produtos/Molduras.vue";
 import GessoAcartonado from "../views/Produtos/GessoAcartonado.vue";
 import Sancas from "../views/Produtos/Sancas.vue";
+import GessoDecor from "../views/Produtos/GessoDecorado.vue";
+import Contato from "../views/Contato.vue";
 
 const routes = [
   {
@@ -42,6 +44,16 @@ const routes = [
     path: "/produtos/sancas",
     name: "Sancas",
     component: Sancas,
+  },
+  {
+    path: "/produtos/gesso-decorado",
+    name: "Gesso Decorado",
+    component: GessoDecor,
+  },
+  {
+    path: "/contato",
+    name: "Contato",
+    component: Contato,
   },
 ];
 
