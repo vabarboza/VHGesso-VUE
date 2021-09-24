@@ -3,13 +3,14 @@
     <div class="row">
       <!--Grid column-->
       <div class="col-md-9 mb-md-0 mb-5">
-        <form>
+        <Toast ref='toast'/>
+        <form ref="form" @submit.prevent="sendEmail">
           <!--Grid row-->
           <div class="row">
             <!--Grid column-->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="name" name="name" class="form-control" />
+                <input v-model="nome"  type="text" name="from_name" class="form-control" required />
                 <label for="name" class>Seu Nome</label>
               </div>
             </div>
@@ -18,7 +19,7 @@
             <!--Grid column-->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="email" name="email" class="form-control" />
+                <input v-model="email" type="text" name="reply_to" class="form-control" required/>
                 <label for="email" class>Seu E-Mail</label>
               </div>
             </div>
@@ -30,7 +31,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="md-form mb-0">
-                <input type="text" id="subject" name="subject" class="form-control" />
+                <input v-model="assunto" type="text" name="from_assunto" class="form-control" required/>
                 <label for="subject" class>Assunto</label>
               </div>
             </div>
@@ -42,17 +43,19 @@
             <!--Grid column-->
             <div class="col-md-12">
               <div class="md-form">
-                <textarea type="text" rows="2" class="form-control md-textarea"></textarea>
+                <textarea v-model="mensagem" name="message" type="text" rows="2" class="form-control md-textarea" required></textarea>
                 <label for="message">Sua Mensagem</label>
               </div>
             </div>
           </div>
           <!--Grid row-->
-        </form>
+        
 
         <div class="text-center text-md-left">
-          <a class="btn btn-primary">Enviar</a>
+          <button class="btn btn-primary">Enviar</button>
         </div>
+
+        </form>
       </div>
       <!--Grid column-->
 
@@ -81,8 +84,34 @@
 </template>
 
 <script>
-export default {
+import emailjs from 'emailjs-com';
+import Toast from './Toast.vue';
 
+export default {
+  data: () => ({
+    nome: "",
+    email: "",
+    assunto: "",
+    mensagem: ""
+  }),
+  methods: {
+    sendEmail() {
+      emailjs.sendForm('service_xmvgouq', 'template_um5hqqo', this.$refs.form, 'user_c9iXupC4Ihl4fZHbsKMVw')
+        .then((result) => {
+          console.log('SUCCESS!', result.text);
+          this.$refs.toast.showToast()
+          this.nome = "",
+            this.email = "",
+            this.assunto = "",
+            this.mensagem = ""
+        }, (error) => {
+          console.log('FAILED...', error.text);
+        });
+    }
+  },
+  components: {
+    Toast
+  }
 }
 </script>
 

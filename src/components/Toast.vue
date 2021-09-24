@@ -22,15 +22,15 @@ export default {
   data: () => ({
     show: false
   }),
-  created() {
-    this.show = false;
-    setTimeout(() => {
-      this.close()
-    }, 4000)
-  },
   methods: {
     close() {
       this.show = false
+    },
+    showToast() {
+      this.show = true;
+      setTimeout(() => {
+        this.close()
+      }, 5000)
     }
   }
 }
