@@ -29,7 +29,7 @@
                     src="img/content/inicio/01.jpg"
                     alt="Card image cap"
                   />
-                  <a href="{{ route('forro-liso') }}">
+                  <a href="/produtos/forrosliso">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -60,7 +60,7 @@
                     src="img/content/inicio/02.jpg"
                     alt="Card image cap"
                   />
-                  <a href="{{ route('molduras') }}">
+                  <a href="/produtos/molduras">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -94,7 +94,7 @@
                     src="img/content/inicio/03.jpg"
                     alt="Card image cap"
                   />
-                  <a href="{{ route('gesso-acartonado') }}">
+                  <a href="/produtos/gesso-acartonado">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -131,7 +131,7 @@
                     src="img/content/inicio/04.jpg"
                     alt="Card image cap"
                   />
-                  <a href="{{ route('sancas') }}">
+                  <a href="/produtos/sancas">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -164,7 +164,7 @@
                     src="img/content/inicio/05.jpg"
                     alt="Card image cap"
                   />
-                  <a href="{{ route('colunas') }}">
+                  <a href="/produtos/colunas">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -200,7 +200,7 @@
                     src="img/content/inicio/06.jpg"
                     alt="Card image cap"
                   />
-                  <a href="{{ route('gesso-decorado') }}">
+                  <a href="/produtos/gesso-decorado">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>

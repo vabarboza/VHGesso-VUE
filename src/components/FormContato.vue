@@ -52,7 +52,7 @@
         
 
         <div class="text-center text-md-left">
-          <button class="btn btn-primary">Enviar</button>
+          <button class="btn btn-elegant btn-rounded">Enviar</button>
         </div>
 
         </form>

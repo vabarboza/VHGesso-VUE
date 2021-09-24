@@ -8,6 +8,8 @@ import GessoAcartonado from "../views/Produtos/GessoAcartonado.vue";
 import Sancas from "../views/Produtos/Sancas.vue";
 import GessoDecor from "../views/Produtos/GessoDecorado.vue";
 import Contato from "../views/Contato.vue";
+import Parceiros from "../views/Parceiros.vue";
+import ParceirosEspeciais from "../views/ParceiroEspeciais.vue";
 
 const routes = [
   {
@@ -54,6 +56,16 @@ const routes = [
     path: "/contato",
     name: "Contato",
     component: Contato,
+  },
+  {
+    path: "/parceiros",
+    name: "Parceiros",
+    component: Parceiros,
+  },
+  {
+    path: "/parceiros-especiais",
+    name: "Parceiros Especiais",
+    component: ParceirosEspeciais,
   },
 ];
 
