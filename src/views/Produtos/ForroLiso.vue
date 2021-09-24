@@ -2,7 +2,9 @@
   <div class="forro-liso">
     <div class="container-sm my-5">
       <div class="card border border-dark rounded-sm bg-white">
-        <div class="card-body text-center text-capitalize font-weight-bold">PRODUTOS</div>
+        <div class="card-body text-center text-capitalize font-weight-bold">
+          PRODUTOS
+        </div>
       </div>
 
       <div class="card-body text-center">
@@ -21,37 +23,47 @@
       </div>
 
       <div class="row">
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/01.jpeg" class="img-fluid" />
-        </figure>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/01.jpeg" class="img-fluid" />
+          </figure>
+        </div>
 
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/02.jpeg" class="img-fluid" />
-        </figure>
-
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/03.jpeg" class="img-fluid" />
-        </figure>
-
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/04.jpeg" class="img-fluid" />
-        </figure>
-
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/05.jpeg" class="img-fluid" />
-        </figure>
-
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/06.jpeg" class="img-fluid" />
-        </figure>
-
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/07.jpeg" class="img-fluid" />
-        </figure>
-
-        <figure class="col-md-3">
-          <img src="@/assets/produtos/forroliso/08.jpeg" class="img-fluid" />
-        </figure>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/02.jpeg" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/03.jpeg" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/04.jpeg" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/05.jpeg" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/06.jpeg" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="view overlay zoom col-md-3 ">
+          <figure>
+            <img src="@/assets/produtos/forroliso/07.jpeg" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="view overlay zoom col-md-3">
+          <figure>
+            <img src="@/assets/produtos/forroliso/08.jpeg" class="img-fluid" />
+          </figure>
+        </div>
       </div>
     </div>
   </div>
